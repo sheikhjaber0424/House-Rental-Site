@@ -79,5 +79,37 @@
 .nn{
  margin-right : 60px;
 }
+
+
+.masterhead{
+    background-size: cover;
+    
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0,0.2)
+    
+   
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0, 0, 0,0.2) 
+}
+
+@media(max-width: 768px){
+    .masterhead{
+        min-height: 30vh;
+    }
+    h1{
+        font-size: calc(1.525rem+3.3vw);
+    }
+}
 </style>
 </html>
