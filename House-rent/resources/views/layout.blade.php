@@ -29,26 +29,21 @@
   padding: 0;
  }
 
+ body{
+  @media screen and (max-width:480px){
+    height:2000px;
+  }
+ }
+
  .custom-login{
   height: 620px;
   padding-top: 100px  
  }
 
- .slider-img{
-    height: 400px !important;
- }
 
- .bd-placeholder-img {
-        height: 400px !important;
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
 
-      .custom-product{
-    height: 600px;
+  .custom-rent{
+   
     margin-top: 20px;
     
  }     
@@ -62,7 +57,7 @@
   width:20%;
 }
 
-.trending{
+.rentals{
   margin-top: 100px;
 }
 
@@ -110,6 +105,36 @@ h1{
     h1{
         font-size: calc(1.525rem+3.3vw);
     }
+}
+
+
+.footer{
+  background: #152F4F;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
 }
 </style>
 </html>

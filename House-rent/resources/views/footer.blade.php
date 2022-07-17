@@ -1,89 +1,38 @@
 
 
-
-
-    
-
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="con" style="clear: both">
-
-    <footer class="text-white text-center text-lg-start bg-dark ft">
-      <!-- Grid container -->
-      <div class="container p-4">
-        <!--Grid row-->
-        <div class="row mt-4">
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">About company</h5>
-  
-            <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque corrupti.
-            </p>
-  
-            <p>
-              Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-              molestias.
-            </p>
-  
-          
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-           
-            <div class="ml-5 mb-4">
-             <h3>Address</h3>
-            </div>
-  
-            <ul class="fa-ul" style="margin-left: 1.65em;">
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Warsaw, 00-967, Poland</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">contact@example.com</span>
-              </li>
-              <li class="mb-3">
-                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234 567 88</span>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
-  
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase mb-4">Opening hours</h5>
-  
-            <table class="table text-center text-white">
-              <tbody class="fw-normal">
-                <tr>
-                  <td>Mon - Thu:</td>
-                  <td>8am - 9pm</td>
-                </tr>
-                <tr>
-                  <td>Fri - Sat:</td>
-                  <td>8am - 1am</td>
-                </tr>
-                <tr>
-                  <td>Sunday:</td>
-                  <td>9am - 10pm</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
+<div class="mt-5 pt-5 pb-5 footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xs-12 about-company">
+        <h2>About Us</h2>
+        <p class="pr-5 text-white-50">BDrentals.com is the leading online apartment listing website, offering renters access to information on more than 1,000,000 available units for rent.</p>
+       
       </div>
-      <!-- Grid container -->
-  
-      <!-- Copyright -->
-      
-      <!-- Copyright -->
-    </footer>
-  
+      <div class="col-lg-3 col-xs-12 links">
+        <h4 class="mt-lg-0 mt-sm-3">Featured Cities</h4>
+          <ul class="m-0 p-0">
+            <li><p href="#">Dhaka</p></li>
+            <li><p href="#">Khulna</p></li>
+            <li><p href="#">Sylhet</p></li>
+            <li><p href="#">Barishal</p></li>
+            <li><p href="#">Rangpur</p></li>
+            <li><p href="#">Chattogram</p></li>
+            
+          </ul>
+      </div>
+      <div class="col-lg-4 col-xs-12 location">
+        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+        <p>Block D, Bashundhara R-A, Dhaka</p>
+        <p class="mb-0"><i class="fa fa-phone mr-3"></i> 01736632808</p>
+        <p><i class="fa fa-envelope mr-3"></i> info@rents.com</p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col copyright">
+        <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+      </div>
+    </div>
   </div>
-
+  </div>
   
-  <!-- End of .container -->
+  
