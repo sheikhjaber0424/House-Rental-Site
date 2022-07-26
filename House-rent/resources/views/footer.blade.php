@@ -1,7 +1,7 @@
 
 
-<div class="mt-5 pt-5 pb-5 footer">
-  <div class="container">
+<div class="mt-5 pt-5 pb-5 footer" >
+  <div class="container" >
     <div class="row">
       <div class="col-lg-5 col-xs-12 about-company">
         <h2>About Us</h2>

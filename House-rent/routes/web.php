@@ -29,3 +29,6 @@ Route::get('/detail/{id}',[RentController::class,'detail']);
 // Route::get('/', function () {
 //     return view('home');
 // });
+
+
+Route::get('/search',[RentController::class,'search']);

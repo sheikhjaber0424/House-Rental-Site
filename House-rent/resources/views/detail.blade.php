@@ -19,7 +19,7 @@
         <div class="card-body" style="padding: 50px">
           <h4 class="card-title font-weight-bold"><a>{{  $rent['category']}}</a></h4>
           <h4 class="about">{{ $rent['price'] }}</h4>
-          <p class="about">{{ $rent['address'] }}</p>
+          <h5 class="about">{{ $rent['address'] }}</h5>
           
 
           <p class="card-text">

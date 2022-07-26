@@ -34,6 +34,7 @@
       </div>
       <hr class="mt-5">
     </div>
+    
     <div class=" mt-5 text-center">
       <h1 class="mt-5" style="font-size:50px">
         The Most Rental Listings        
