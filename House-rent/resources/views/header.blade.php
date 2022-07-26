@@ -29,8 +29,8 @@
 
     <!-- Button trigger modal -->
     <div>
-      <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#Login">Log
-        In</button>
+      <a href="/login"><button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#Login">Log
+        In</button></a>
       <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#Signup">Sign Up</button>
 
 

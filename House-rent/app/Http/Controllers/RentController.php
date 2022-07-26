@@ -14,5 +14,11 @@ class RentController extends Controller
         $data = Rent::all();
         return view('home',['rents'=>$data]);
     }
+
+    public function detail($id)
+    {
+        $detail = Rent::find($id);
+         return view('detail',['rent'=>$detail]);
+    }
 }
    

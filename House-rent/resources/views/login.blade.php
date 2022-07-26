@@ -3,7 +3,7 @@
 <div class="container custom-login">
    <div class="row margin-top-10">
         <div class="col-sm-4 mx-auto  mb-5 mt-5" style="margin-top:20%;">
-            <form action="login" method="POST">
+            <form action="/login" method="POST">
               @csrf
                 <div class="mb-3">
                     <h3>Sign into your account</h3>

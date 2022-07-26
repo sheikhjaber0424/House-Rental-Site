@@ -48,14 +48,7 @@
     
  }     
 
-.trending-image{
-  height: 100px;
-}
 
-.trending-item{
-  float: left;
-  width:20%;
-}
 
 .rentals{
   margin-top: 100px;
@@ -66,14 +59,7 @@
 }
  
 
-.main-detail{
-  height: 530px;
-} 
 
-
-.nn{
- margin-right : 60px;
-}
 
 
 .masterhead{
@@ -136,5 +122,9 @@ h1{
   }
   .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
 }
+
+
+
+
 </style>
 </html>

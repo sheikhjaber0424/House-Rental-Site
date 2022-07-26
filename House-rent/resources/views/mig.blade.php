@@ -20,9 +20,7 @@ class CreateRentsTable extends Migration
             $table->string("category");
             $table->string("bedroom");
             $table->string("bathroom");
-            $table->longText("description");
             $table->string("area");
-            $table->string("phone");
             $table->string("gallery");
             $table->timestamps();
         });
