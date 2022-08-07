@@ -26,11 +26,18 @@ class RentController extends Controller
         
          $data= Rent::where('price', 'like','%'.$request->input('query').'%')
                             ->orWhere('address', 'like','%'.$request->input('query').'%')
-                            ->orWhere('description', 'like','%'.$request->input('query').'%')
                             ->orWhere('category', 'like','%'.$request->input('query').'%')
                             ->get();
                       
        return view('search',['rents'=>$data]);
+    }
+
+
+    function booking($id){
+        $detail = Rent::find($id);
+        return view('booking',['rent'=>$detail]);
+        //return view('booking');
+        
     }
 }
    

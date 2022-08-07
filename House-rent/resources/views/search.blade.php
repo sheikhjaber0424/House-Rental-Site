@@ -1,6 +1,6 @@
 @extends('layout') 
 @section('content')
-<div class="container custom-rent mb-5">
+<div class="container custom-rent mb-5" style="min-height: 480px !important">
     <h1 class="mb-5 text-center featurette-heading"  style="font-size:50px;margin-top:40px" >Search Result</h1>  
       <div class="rentals " style="display: flex;flex-flow:row;justify-content:start;flex-wrap:wrap;"> 
          

@@ -21,18 +21,18 @@ class RentSeeder extends Seeder
                 'bedroom'=> '5',
                 'bathroom'=> '3',
                 'description' =>'If you are looking for a home within an affordable range then check this flat. Well fitted with gas, electricity and water supplies, this flat is ideal to move in for new inhabitants. After entering the flat, you will find ample rooms cited for your recessing time and also happy dine hour. The kitchen area is just close to the dining space which gives the impression of ample light and space to have a content cooking time. Well-fitted bathrooms with resilient fixtures as per your prerequisites. Lots of restaurants, shopping places and schools are nearby as well as parks so the neighborhood is great as well. ',
-                'area'=> '2000 sqft',
+                'area'=> '2400 sqft',
                 'phone'=>'01722626182',
                 'gallery' =>'https://images1.apartments.com/i2/Mel4Hm5GU_A13jVZId0JNlaZaYgQpTgCahWJI-5laEc/116/elevate-chicago-il-primary-photo.jpg?p=1'
             ],
             [
-                'price'=>'BDT 35 Thousand',
+                'price'=>'BDT 55 Thousand',
                 'address' => 'Sector 10, Uttara, Dhaka',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '3',
-                'description'=>'This beautiful apartment is standing on an area of 2000  Square Feet facing in the east is located in Uttara. The price for this apartment is BDT 35,000. The flat comes complete with 3 beds, 4 baths, drawing, dining room and a kitchen. Each washroom has got the fixtures installed with the high durability guarantee. All-time security, ample parking space are some other benefits worth mentioning for this flat.  ',
-                'area'=> '2400 sqft',
+                'description'=>'This beautiful apartment is standing on an area of 2000  Square Feet facing in the east is located in Uttara. The price for this apartment is BDT 35,000. The flat comes complete with 3 beds, 3 baths, drawing, dining room and a kitchen. Each washroom has got the fixtures installed with the high durability guarantee. All-time security, ample parking space are some other benefits worth mentioning for this flat.  ',
+                'area'=> '2000 sqft',
                 'phone'=>'01735526182',
                 'gallery' =>'https://images1.apartments.com/i2/Qz0af-n9GB1I1leEoyF5owiU7zlV0ZzVw1acb0fUhj4/102/the-residences-at-newcity-chicago-il-primary-photo.jpg?p=1'
             ],
@@ -101,7 +101,7 @@ class RentSeeder extends Seeder
                 'bedroom'=> '3',
                 'bathroom'=> '3',
                 'description'=>'This is a beautiful apartment and in the living space, you will find that there is a multi-colored brick pattern and the floor pattern is strikingly unique. There are three bedrooms and two of them have balconies attached. There is a drawing and a dining room and even though it is one space, it is quite an extensive one and you will find a comfortable amount of space. One of the bedrooms here does not have an attached balcony but it is quite spacious. You could use this as the guest room',
-                'area'=> '21,000 sqft',
+                'area'=> '18,00 sqft',
                 'phone'=>'01736656182',
                 'gallery' =>'https://images1.apartments.com/i2/mPQROu5vkg56yw4Obw8-63jHgSyEq141-MhPL9RH5QE/116/gild-chicago-il-building-photo.jpg?p=1'
             ]

@@ -42,7 +42,7 @@
           <p>Type   :    Appartment</p>
           <p>Purpose   :    Rent</p>
           <p>For more info: <i class="fa fa-phone mr-3"></i> {{ $rent['phone'] }} </p>
-          <a href=""><button style="width: 150px;margin-top:20px" type="button" class="btn btn-lg btn-primary">Book</button></a>
+          <a href="/booking/{{ $rent['id'] }}"><button style="width: 150px;margin-top:20px" type="button" class="btn btn-lg btn-primary">Book</button></a>
         </div>
       </div>
       

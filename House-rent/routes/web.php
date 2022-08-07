@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\RentController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\RentController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -19,6 +20,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('/login');
+});
+
  Route::post('/login',[UserController::class,'login']);
 // Route::get('/',[RentController::class,'index']);
 
@@ -31,4 +37,9 @@ Route::get('/detail/{id}',[RentController::class,'detail']);
 // });
 
 
+//To search items
 Route::get('/search',[RentController::class,'search']);
+
+
+//Route::get('/booking/{id}',[RentController::class,'booking']);
+Route::get('/booking/{id}',[RentController::class,'booking']);
