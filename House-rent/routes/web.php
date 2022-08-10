@@ -25,8 +25,18 @@ Route::get('/logout', function () {
     return redirect('/login');
 });
 
+
+// Login
  Route::post('/login',[UserController::class,'login']);
 // Route::get('/',[RentController::class,'index']);
+
+// Registration
+
+Route::post('/register',[RentController::class,'register']);
+Route::get('/register', function () {  
+    return view('register');
+});
+
 
 
 Route::get('/',[RentController::class,'index']);
@@ -43,3 +53,8 @@ Route::get('/search',[RentController::class,'search']);
 
 //Route::get('/booking/{id}',[RentController::class,'booking']);
 Route::get('/booking/{id}',[RentController::class,'booking']);
+
+
+Route::post('/save',[RentController::class,'save']);
+
+Route::post('/confirmbooking',[RentController::class,'confirmbooking']);

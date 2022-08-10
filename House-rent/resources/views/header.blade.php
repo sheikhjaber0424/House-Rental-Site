@@ -10,13 +10,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">About</a>
-        </li>
        
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html">Contact</a>
-        </li>
 
 
       </ul>
@@ -52,7 +46,7 @@
         <li>
           <a href="/login"><button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#Login">Log
             In</button></a>
-          <button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#Signup">Sign Up</button>
+          <a href="/register"><button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#Signup">Register</button></a>
         </li>    
     
         

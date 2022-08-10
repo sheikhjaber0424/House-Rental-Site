@@ -9,7 +9,7 @@
 <div class="container " >
     <section class="mx-auto my-5 " style="max-width: 100%; display: flex;justify-content:center">
         
-      <div class="card" style="width: 90%">
+      <div class="card shadow " style="width: 90%">
         <div class="bg-image hover-overlay ripple mb-5 mt-5 " data-mdb-ripple-color="light" style="display: flex;justify-content:center">
           <img src="{{ $rent['gallery'] }}" width="90%" class="text-center" />
           <a href="#!">

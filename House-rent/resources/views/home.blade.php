@@ -17,7 +17,7 @@
       @foreach ($rents as $item) 
       
 
-     <div class="card text-center" style="width: 20rem;display:inline-block;margin:40px 0px">
+     <div class="shadow p-3 card text-center" style="width: 20rem;display:inline-block;margin:40px 0px">
       <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top" src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
       <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
         <div class="card-body">
@@ -48,7 +48,7 @@
 
 
 
-
+<section > 
     <div class="container about" >
 
       <div class="row featurette d-flex justify-content-center align-items-center my-4 " style="margin-top: 20px">
@@ -94,7 +94,7 @@
           </div>
       </div>
   </div>
-
+</section>
 
 @endsection
 
