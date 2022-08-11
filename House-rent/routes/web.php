@@ -54,7 +54,11 @@ Route::get('/search',[RentController::class,'search']);
 //Route::get('/booking/{id}',[RentController::class,'booking']);
 Route::get('/booking/{id}',[RentController::class,'booking']);
 
-
+//save booking details in database
 Route::post('/save',[RentController::class,'save']);
 
-Route::post('/confirmbooking',[RentController::class,'confirmbooking']);
+
+//showing booked List
+
+Route::get('/bookeditems',[RentController::class,'bookeditems']);
+

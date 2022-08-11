@@ -3,10 +3,12 @@
     
     <div class="container mt-5"> 
       <div class="row justify-content-center">
+        
         <div class="col-lg-6">
     <form action='/save' method="POST">
         @csrf
-        <input type="text" name="rent_id" value="{{ $rent['id'] }}">
+        <div class="display-4 text-center mb-5">Booking Form</div>
+        <input class="d-none" type="text" name="rent_id" value="{{ $rent['id'] }}">
         <!-- 2 column grid layout with text inputs for the first and last names -->
           <div class="form-outline mb-4">
           <input type="text" name="name" id="form6Example3" class="form-control" required/>
@@ -38,12 +40,13 @@
           <input type="number" name="phone" id="form6Example6" class="form-control" required/>
           <label class="form-label" for="form6Example6"><i class="fa fa-solid fa-phone"></i> Phone</label>
         </div>
+
          
         <div class="form-outline mb-4">
         <select name="status" class="form-select" aria-label="Default select example">
             
-            <option value="1">Married</option>
-            <option value="2">Unmarried</option>
+            <option value="Married">Married</option>
+            <option value="Unmarried">Unmarried</option>
            
           </select>
           <label class="form-label" for="form6Example3"> Maritial Status</label>

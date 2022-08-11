@@ -33,7 +33,7 @@
                 </a>
                 <ul id="user" class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                  <li><a class="dropdown-item" href="#">Bookings</a></li>
+                  <li><a class="dropdown-item" href="/bookeditems">Bookings</a></li>
                   
                 </ul>
               </li>

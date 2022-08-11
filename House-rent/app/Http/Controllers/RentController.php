@@ -66,31 +66,32 @@ class RentController extends Controller
 
     public function save(Request $request){
         
-            $book = new Booking;
-            $book->user_id=$request->session()->get('user')['id'];
-            $book->rent_id=$request->rent_id;
-            $book->name = $request->name;
-            $book->occupation = $request->occupation;
-            $book->address = $request->address;
-            $book->email = $request->email;
-            $book->phone = $request->phone;
-            $book->status = $request->status;
-            $book->members = $request->members;
-            $book->save();
-
-            $userId = Session::get('user')['id'];
-            $bookedItems = DB::table('bookings')
-           ->join('rents','bookings.rent_id','=','rents.id')
-           ->where('bookings.user_id',$userId)
-           ->select('rents.*','bookings.id as bookings_id')
-           ->get();
+        $book = new Booking;
+        $book->user_id=$request->session()->get('user')['id'];
+        $book->rent_id=$request->rent_id;
+        $book->name = $request->name;
+        $book->occupation = $request->occupation;
+        $book->address = $request->address;
+        $book->email = $request->email;
+        $book->phone = $request->phone;
+        $book->status = $request->status;
+        $book->members = $request->members;
+        $book->save();    
+    return redirect('/');
     
-           
-        
-        return redirect('/');
-        
-    }
+}
 
-   
+public function bookeditems(){
+    $userId = Session::get('user')['id'];
+        $Items = DB::table('bookings')
+       ->join('rents','bookings.rent_id','=','rents.id')
+       ->where('bookings.user_id',$userId)
+       ->get();
+
+    // dd($Items);
+  return view('bookeditems',[ 'Items'=> $Items]);
+ 
+}
+  
 }
    
