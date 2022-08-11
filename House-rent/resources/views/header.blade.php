@@ -11,16 +11,24 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
        
+      
+
+        <li><a class="nav-link active" href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+          Cities
+        </a></li>
+       
+       
 
 
       </ul>
 
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nn">
+       
         <form action="/search" class="d-flex">
           <input style="width:300px" class="form-control me-2" type="text" name="query" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light" type="submit">Search</button>
         </form> 
-  
+       
         
         @if (Session::has('user'))  
           
@@ -88,3 +96,68 @@
   </div>
   </div>
 </nav>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+  <div class="offcanvas-header ">
+    <h5 class="offcanvas-title " id="sidebar-label">Search by City</h5>
+    
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+  </div>
+  <div class="list-group my-5 text-center">
+    
+    
+
+    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+      <form action="/citySearch" class="d-flex">
+      <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Dhaka" placeholder="Search" aria-label="Search">
+      <button class="dropdown-item" type="submit">Dhaka</button>
+      </form>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+      <form action="/citySearch" class="d-flex">
+      <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Rajshahi" placeholder="Search" aria-label="Search">
+      <button class="dropdown-item" type="submit">Rajshahi</button>
+      </form>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+      <form action="/citySearch" class="d-flex">
+        <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Khulna" placeholder="Search" aria-label="Search">
+        <button class="dropdown-item" type="submit">Khulna</button>
+        </form>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+      <form action="/citySearch" class="d-flex">
+        <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Barisal" placeholder="Search" aria-label="Search">
+        <button class="dropdown-item" type="submit">Barisal</button>
+      </form>
+      </a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+      <form action="/citySearch" class="d-flex">
+        <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Sylhet" placeholder="Search" aria-label="Search">
+        <button class="dropdown-item" type="submit">Sylhet</button>
+      </form>
+    </a>
+
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+      <form action="/citySearch" class="d-flex">
+        <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Mymensingh" placeholder="Search" aria-label="Search">
+        <button class="dropdown-item" type="submit">Mymensingh</button>
+      </form>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+      <form action="/citySearch" class="d-flex">
+      <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Rangpur" placeholder="Search" aria-label="Search">
+      <button class="dropdown-item" type="submit">Rangpur</button>
+      </form>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+      <form action="/citySearch" class="d-flex">
+        <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Chittagong" placeholder="Search" aria-label="Search">
+        <button class="dropdown-item" type="submit">Chittagong</button>
+      </form>
+    </a>
+  </div>
+  </button>
+</div>

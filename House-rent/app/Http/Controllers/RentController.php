@@ -92,6 +92,15 @@ public function bookeditems(){
   return view('bookeditems',[ 'Items'=> $Items]);
  
 }
+
+public function citySearch(Request $request)
+{
+    $data = Rent::where('address', 'like','%'.$request->input('query').'%')->get();
+    // dd( $data);
+    return view('citySearch',['cities'=>$data]);
+
+}
+
   
 }
    

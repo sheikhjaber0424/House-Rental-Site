@@ -90,18 +90,18 @@ class RentSeeder extends Seeder
                 'bedroom'=> '3',
                 'bathroom'=> '3',
                 'description'=>'This is a beautiful apartment and in the living space, you will find that there is a multi-colored brick pattern and the floor pattern is strikingly unique. There are three bedrooms and two of them have balconies attached. There is a drawing and a dining room and even though it is one space, it is quite an extensive one and you will find a comfortable amount of space. One of the bedrooms here does not have an attached balcony but it is quite spacious. You could use this as the guest room',
-                'area'=> '12,00 sqft',
+                'area'=> '1200 sqft',
                 'phone'=>'01736686182',
                 'gallery' =>'https://images1.apartments.com/i2/bA-nT2UnE0MNBKjnVpuCMjIyvVEhRyv4EhNLoeKo7Uw/116/gild-chicago-il-elevator-vestibule-at-gild-gold-coast-ap.png?p=1'
             ],
             [
                 'price'=>'BDT 45 Thousand',
-                'address' => 'Block A, Bashundhara R-A, Dhaka',
+                'address' => 'Block A, Rayapur , Barisal',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '3',
                 'description'=>'This is a beautiful apartment and in the living space, you will find that there is a multi-colored brick pattern and the floor pattern is strikingly unique. There are three bedrooms and two of them have balconies attached. There is a drawing and a dining room and even though it is one space, it is quite an extensive one and you will find a comfortable amount of space. One of the bedrooms here does not have an attached balcony but it is quite spacious. You could use this as the guest room',
-                'area'=> '18,00 sqft',
+                'area'=> '1800 sqft',
                 'phone'=>'01736656182',
                 'gallery' =>'https://images1.apartments.com/i2/mPQROu5vkg56yw4Obw8-63jHgSyEq141-MhPL9RH5QE/116/gild-chicago-il-building-photo.jpg?p=1'
             ]

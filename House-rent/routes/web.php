@@ -62,3 +62,5 @@ Route::post('/save',[RentController::class,'save']);
 
 Route::get('/bookeditems',[RentController::class,'bookeditems']);
 
+
+Route::get('/citySearch',[RentController::class,'citySearch']);
