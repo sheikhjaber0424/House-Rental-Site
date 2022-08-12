@@ -1,14 +1,24 @@
 @extends('layout') 
 @section('content')
 
+
+<section id="intro">
  <div class="masterhead" style="background-image: url('https://cdn.pixabay.com/photo/2016/08/16/17/12/skyscrapers-1598418_960_720.jpg')">
     <div class="color-overlay d-flex justify-content-center align-items-center">
        <h1 >Discover Your New Home</h1>
 
     </div>
 </div>
+</section>
 
 
+
+
+
+
+
+
+<section id="apps">
 <div class="container custom-rent mb-5">
   <h1 class="mb-5 text-center featurette-heading"  style="font-size:50px;margin-top:40px" >Explore Rentals in Bangladesh</h1>  
     <div class="rentals " style="display: flex;flex-flow:row;justify-content:space-between;flex-wrap:wrap"> 
@@ -17,8 +27,8 @@
       @foreach ($rents as $item) 
       
 
-     <div class="shadow p-3 card text-center" style="width: 20rem;display:inline-block;margin:40px 0px">
-      <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top" src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
+     <div class="shadow p-3 card text-center cityimg card border-0" style="width: 20rem;display:inline-block;margin:40px 0px">
+      <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top " src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
       <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
         <div class="card-body">
             <h5>{{ $item['category'] }}</h5>
@@ -34,22 +44,27 @@
       </div>
       <hr class="mt-5">
     </div>
+  </section>
 
-    <div class=" mt-5 text-center">
-      <h1 class="mt-5" style="font-size:50px">
-        The Most Rental Listings        
-      </h1>
 
-      <p>Choose from over 1 million apartments, houses, condos, and townhomes for rent.</p>
-    </div>
+
+   
 
 
 
 
 
 
-<section > 
-    <div class="container about" >
+<section id="about" class="bg-light pb-5"> 
+  <div class=" pt-5 text-center">
+    <h1  class="mt-5 display-3" >
+      The Most Rental Listings        
+    </h1>
+
+    <p class="lead">Choose from over 1 million apartments, houses, condos, and townhomes for rent.</p>
+  </div>
+
+    <div class="container about mt-4" >
 
       <div class="row featurette d-flex justify-content-center align-items-center my-4 " style="margin-top: 20px">
        
@@ -94,6 +109,36 @@
           </div>
       </div>
   </div>
+</section>
+
+<section id="explore" class="mb-5">
+  <div class="container-lg">
+    <div class="text-center">
+      <h2 class="display-4 my-5">Explore Areas</h2>
+    </div>
+  
+  <div class="row justify-content-center">
+    
+    <div class="col-md-4 text-center shadow p-3 ">
+      <a href="" class="text-decoration-none text-dark">
+        <img src="https://cdn.pixabay.com/photo/2013/11/13/21/14/san-francisco-210230_960_720.jpg" alt="" class="img-fluid mb-4 cityimg" style="clip-path:circle();opacity:0.8" width="360" >
+      <h3 >Gulshan</h3>
+    </a>
+    </div>
+    <div class="col-md-4 text-center shadow p-3">
+      <a href="" class="text-decoration-none text-dark">
+        <img src="https://cdn.pixabay.com/photo/2016/07/13/20/44/architecture-1515475_960_720.jpg" alt="" class="img-fluid mb-4 cityimg" style="clip-path:circle();opacity:0.8" width="500" >
+      <h3>Banani</h3>
+    </a>
+    </div>
+    <div class="col-md-4 text-center  shadow p-3">
+      <a href="" class="text-decoration-none text-dark ">
+        <img src="https://cdn.pixabay.com/photo/2017/04/11/03/33/dinant-2220459_960_720.jpg" alt="" class="img-fluid mb-4 cityimg " style="clip-path:circle();opacity:0.8" width="500" >
+      <h3>Baridhara</h3>
+    </a>
+    </div>
+  </div>
+</div>
 </section>
 
 @endsection

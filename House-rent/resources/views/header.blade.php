@@ -26,14 +26,14 @@
        
         <form action="/search" class="d-flex">
           <input style="width:300px" class="form-control me-2" type="text" name="query" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
+          <button style="width:100px" class="btn btn-outline-light rounded-pill" type="submit">Search</button>
         </form> 
        
         
         @if (Session::has('user'))  
           
-        <ul style="margin-top: 10px;margin-right:70px;display:flex;justify-content:flex-end">
-          <li><div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul  style="margin-top: 10px;margin-right:70px;display:flex;justify-content:flex-end">
+          <li class="nav-item" ><div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,9 +52,9 @@
              
             
         <li>
-          <a href="/login"><button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#Login">Log
+          <a href="/login"><button type="button" class="btn btn-success mx-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#Login">Log
             In</button></a>
-          <a href="/register"><button type="button" class="btn btn-success " data-bs-toggle="modal" data-bs-target="#Signup">Register</button></a>
+          <a href="/register"><button type="button" class="btn btn-success rounded-pill " data-bs-toggle="modal" data-bs-target="#Signup">Register</button></a>
         </li>    
     
         

@@ -12,7 +12,7 @@
         <!-- 2 column grid layout with text inputs for the first and last names -->
           <div class="form-outline mb-4">
           <input type="text" name="name" id="form6Example3" class="form-control" required/>
-          <label class="form-label" for="form6Example3">Full name</label>
+          <label class="form-label" for="form6Example3"><i class="bi bi-person-fill"></i> Full name</label>
         </div>
       
         <!-- Text input -->
@@ -54,7 +54,7 @@
 
         <div class="form-outline mb-4">
             <input type="text" name="members" id="form6Example3" class="form-control" required/>
-            <label class="form-label" for="form6Example3">Total members</label>
+            <label class="form-label" for="form6Example3"><i class="bi bi-people-fill"></i> Total members</label>
           </div>
         <!-- Message input -->
      
@@ -65,6 +65,8 @@
         <button type="submit" class="btn btn-primary btn-block mb-4">Confirm booking</button>
       </form>
     </div>
+
+
     </div>
     </div>
 @endsection
