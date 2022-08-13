@@ -1,3 +1,8 @@
+@php
+    $city =array("dhaka","rajshahi","khulna","barisal","sylhet","mymensinhg","rangpur","chittagong");
+  
+@endphp
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">BDrentals.com </a>
@@ -108,55 +113,63 @@
     
     
 
-    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[0] }}" class="list-group-item list-group-item-action list-group-item-primary">
+      {{-- <form action="/citySearch" class="d-flex">
       <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Dhaka" placeholder="Search" aria-label="Search">
       <button class="dropdown-item" type="submit">Dhaka</button>
-      </form>
+      </form> --}}
+      Dhaka
     </a>
 
-    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[1] }}" class="list-group-item list-group-item-action list-group-item-secondary">
+      {{-- <form action="/citySearch" class="d-flex">
       <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Rajshahi" placeholder="Search" aria-label="Search">
       <button class="dropdown-item" type="submit">Rajshahi</button>
-      </form>
+      </form> --}}
+      Rajshahi
     </a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-success">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[2] }}" class="list-group-item list-group-item-action list-group-item-success">
+      {{-- <form action="/citySearch" class="d-flex">
         <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Khulna" placeholder="Search" aria-label="Search">
         <button class="dropdown-item" type="submit">Khulna</button>
-        </form>
+        </form> --}}
+        Khulna
     </a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[3] }}"  class="list-group-item list-group-item-action list-group-item-danger">
+      {{-- <form action="/citySearch" class="d-flex">
         <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Barisal" placeholder="Search" aria-label="Search">
         <button class="dropdown-item" type="submit">Barisal</button>
-      </form>
+      </form> --}}
+      Barisal
       </a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[4] }}" class="list-group-item list-group-item-action list-group-item-warning">
+      {{-- <form action="/citySearch" class="d-flex">
         <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Sylhet" placeholder="Search" aria-label="Search">
         <button class="dropdown-item" type="submit">Sylhet</button>
-      </form>
+      </form> --}}
+      Sylhet
     </a>
 
-    <a href="#" class="list-group-item list-group-item-action list-group-item-info">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[5] }}" class="list-group-item list-group-item-action list-group-item-info">
+      {{-- <form action="/citySearch" class="d-flex">
         <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Mymensingh" placeholder="Search" aria-label="Search">
         <button class="dropdown-item" type="submit">Mymensingh</button>
-      </form>
+      </form> --}}
+      Mymensingh
     </a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-light">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[6] }}" class="list-group-item list-group-item-action list-group-item-light">
+      {{-- <form action="/citySearch" class="d-flex">
       <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Rangpur" placeholder="Search" aria-label="Search">
       <button class="dropdown-item" type="submit">Rangpur</button>
-      </form>
+      </form> --}}
+      Rangpur
     </a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
-      <form action="/citySearch" class="d-flex">
+    <a href="/citySearch/{{ $city[7] }}" class="list-group-item list-group-item-action list-group-item-dark">
+      {{-- <form action="/citySearch" class="d-flex">
         <input style="width:350px" class="form-control ms-2 d-none" type="text" name="query" value="Chittagong" placeholder="Search" aria-label="Search">
         <button class="dropdown-item" type="submit">Chittagong</button>
-      </form>
+      </form> --}}
+      Chittagong
     </a>
   </div>
   </button>

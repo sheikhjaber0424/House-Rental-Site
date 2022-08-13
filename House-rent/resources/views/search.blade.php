@@ -8,7 +8,7 @@
         @foreach ($rents as $item) 
         
   
-       <div class="card text-center" style="width: 20rem;display:inline-block;margin:40px 2px">
+       <div class="card shadow p-3 text-center cityimg border-0" style="width: 20rem;display:inline-block;margin:40px 2px">
         <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top" src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
         <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
           <div class="card-body">
@@ -23,7 +23,7 @@
   
           @endforeach  
         </div>
-        <hr class="mt-5">
+        
       </div>
  @endsection   
 

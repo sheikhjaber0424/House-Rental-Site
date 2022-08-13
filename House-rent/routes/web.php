@@ -62,5 +62,8 @@ Route::post('/save',[RentController::class,'save']);
 
 Route::get('/bookeditems',[RentController::class,'bookeditems']);
 
+//Search by city
+Route::get('/citySearch/{city_name}',[RentController::class,'citySearch']);
 
-Route::get('/citySearch',[RentController::class,'citySearch']);
+//Explore regions
+Route::get('/exploreRegion/{explore_name}',[RentController::class,'exploreRegion']);

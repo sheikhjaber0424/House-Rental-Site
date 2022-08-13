@@ -2,6 +2,10 @@
 @section('content')
 
 
+@php
+  $explore_region = array("gulshan","banani","baridhara");
+@endphp
+
 <section id="intro">
  <div class="masterhead" style="background-image: url('https://cdn.pixabay.com/photo/2016/08/16/17/12/skyscrapers-1598418_960_720.jpg')">
     <div class="color-overlay d-flex justify-content-center align-items-center">
@@ -21,13 +25,13 @@
 <section id="apps">
 <div class="container custom-rent mb-5">
   <h1 class="mb-5 text-center featurette-heading"  style="font-size:50px;margin-top:40px" >Explore Rentals in Bangladesh</h1>  
-    <div class="rentals " style="display: flex;flex-flow:row;justify-content:space-between;flex-wrap:wrap"> 
+    <div class="rentals " style="display: flex;flex-flow:row;justify-content:space-around;flex-wrap:wrap"> 
        
 
       @foreach ($rents as $item) 
       
 
-     <div class="shadow p-3 card text-center cityimg card border-0" style="width: 20rem;display:inline-block;margin:40px 0px">
+     <div class="card shadow p-3 card text-center cityimg border-0" style="width: 20rem;display:inline-block;margin:40px 0px">
       <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top " src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
       <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
         <div class="card-body">
@@ -42,8 +46,15 @@
 
         @endforeach  
       </div>
-      <hr class="mt-5">
+      <div class="mt-6 p-4 d-flex justify-content-end">
+        <div class="secondary">
+          {{  $rents->links()}}
+        </div>
+       
+      </div>
+    
     </div>
+   
   </section>
 
 
@@ -120,19 +131,19 @@
   <div class="row justify-content-center">
     
     <div class="col-md-4 text-center shadow p-3 ">
-      <a href="" class="text-decoration-none text-dark">
+      <a href="/exploreRegion/{{ $explore_region[0] }}" class="text-decoration-none text-dark">
         <img src="https://cdn.pixabay.com/photo/2013/11/13/21/14/san-francisco-210230_960_720.jpg" alt="" class="img-fluid mb-4 cityimg" style="clip-path:circle();opacity:0.8" width="360" >
       <h3 >Gulshan</h3>
     </a>
     </div>
     <div class="col-md-4 text-center shadow p-3">
-      <a href="" class="text-decoration-none text-dark">
+      <a href="/exploreRegion/{{ $explore_region[1] }}" class="text-decoration-none text-dark">
         <img src="https://cdn.pixabay.com/photo/2016/07/13/20/44/architecture-1515475_960_720.jpg" alt="" class="img-fluid mb-4 cityimg" style="clip-path:circle();opacity:0.8" width="500" >
       <h3>Banani</h3>
     </a>
     </div>
     <div class="col-md-4 text-center  shadow p-3">
-      <a href="" class="text-decoration-none text-dark ">
+      <a href="/exploreRegion/{{ $explore_region[2] }}" class="text-decoration-none text-dark ">
         <img src="https://cdn.pixabay.com/photo/2017/04/11/03/33/dinant-2220459_960_720.jpg" alt="" class="img-fluid mb-4 cityimg " style="clip-path:circle();opacity:0.8" width="500" >
       <h3>Baridhara</h3>
     </a>

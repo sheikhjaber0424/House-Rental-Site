@@ -41,11 +41,38 @@
           </ul>
           <p>Type   :    Appartment</p>
           <p>Purpose   :    Rent</p>
-          <p>For more info: <i class="fa fa-phone mr-3"></i> {{ $rent['phone'] }} </p>
+          <p>For more info: <i class="fa fa-phone "></i> {{ $rent['phone'] }} </p>
           <a href="/booking/{{ $rent['id'] }}"><button style="width: 150px;margin-top:20px" type="button" class="btn btn-lg btn-primary">Book</button></a>
         </div>
       </div>
       
     </section>
   </div>
+
+
+  <section id="related_items">
+
+    <div class="container custom-rent mb-5">
+      @if(count($allRent)>1)
+      <h1 class="display-4 mb-2 text-center featurette-heading"  style="margin-top:110px" >Other Apartments in {{ $rent['city'] }}</h1>  
+      @endif
+        @foreach ($allRent as $item)
+
+          @if($rent['id'] != $item['id'] )
+          <div class="card shadow p-3 card text-center cityimg border-0" style="width: 20rem;display:inline-block;margin:40px 0px">
+            <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top " src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
+            <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
+              <div class="card-body">
+                  <h5>{{ $item['category'] }}</h5>
+                <p class="card-text">{{ $item['price'] }}</p>
+                <p>{{$item['address']  }}</p>
+              </div>
+            </a>
+            </div>
+            @endif
+
+        @endforeach
+    </div>
+
+  </section>
 @endsection

@@ -16,16 +16,22 @@ class RentController extends Controller
 {
     public function index()
     {
-        $data = Rent::all();
+        $data = Rent::paginate(8);
         return view('home',['rents'=>$data]);
     }
 
     public function detail($id)
     {
         $detail = Rent::find($id);
-         return view('detail',['rent'=>$detail]);
-    }
+        $city = $detail['city'];
 
+        //   dd($city);
+       
+        $detailAll = Rent::where('city', 'like','%'.$city.'%')->get(); 
+        // dd($detailAll);
+        return view('detail',['rent'=>$detail,'allRent'=>$detailAll]);
+    }
+ 
     function search(Request $request)
     {
         
@@ -33,7 +39,7 @@ class RentController extends Controller
                             ->orWhere('address', 'like','%'.$request->input('query').'%')
                             ->orWhere('category', 'like','%'.$request->input('query').'%')
                             ->get();
-                      
+        //  dd($data);
        return view('search',['rents'=>$data]);
     }
 
@@ -93,12 +99,17 @@ public function bookeditems(){
  
 }
 
-public function citySearch(Request $request)
+public function citySearch($city_name)
 {
-    $data = Rent::where('address', 'like','%'.$request->input('query').'%')->get();
-    // dd( $data);
+    $data = Rent::where('address', 'like','%'.$city_name.'%')->get();
+    // dd($city_name);
     return view('citySearch',['cities'=>$data]);
+}
 
+public function exploreRegion($explore_region)
+{
+    $data = Rent::where('region', 'like','%'.$explore_region.'%')->get(); 
+    return view('citySearch',['cities'=>$data]);
 }
 
   

@@ -16,7 +16,9 @@ class RentSeeder extends Seeder
         DB::table('rents')->insert([
             [
                 'price'=>'BDT 60 Thousand',
+                'city' => 'Dhaka',
                 'address' => 'Banani, Road-13, House-18, Dhaka',
+                'region' => 'Banani',
                 'category' => 'Apartment',
                 'bedroom'=> '5',
                 'bathroom'=> '3',
@@ -27,7 +29,9 @@ class RentSeeder extends Seeder
             ],
             [
                 'price'=>'BDT 55 Thousand',
+                'city' => 'Dhaka',
                 'address' => 'Sector 10, Uttara, Dhaka',
+                'region' => 'Uttara',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '3',
@@ -38,7 +42,9 @@ class RentSeeder extends Seeder
             ],
             [
                 'price'=>'BDT 55 Thousand',
+                'city' => 'Dhaka',
                 'address' => 'Sector 4, Uttara, Dhaka',
+                'region' => 'Uttara',
                 'category' => 'Apartment',
                 'bedroom'=> '4',
                 'bathroom'=> '3',
@@ -49,7 +55,9 @@ class RentSeeder extends Seeder
             ],
             [
                 'price'=>'BDT 22 Thousand',
+                'city' => 'Dhaka',
                 'address' => 'Block I, Bashundhara R-A, Dhaka',
+                'region' => 'Bashundhara',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '2',
@@ -61,7 +69,9 @@ class RentSeeder extends Seeder
 
             [
                 'price'=>'BDT 21 Thousand',
+                'city' => 'Dhaka',
                 'address' => 'Gulshan 2, Gulshan, Dhaka',
+                'region' => 'Gulshan',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '2',
@@ -73,7 +83,9 @@ class RentSeeder extends Seeder
     
             [
                 'price'=>'BDT 22 Thousand',
+                'city' => 'Dhaka',
                 'address' => 'Block I, Bashundhara R-A, Dhaka',
+                'region' => 'Bashundhara',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '3',
@@ -85,7 +97,9 @@ class RentSeeder extends Seeder
     
             [
                 'price'=>'BDT 22 Thousand',
-                'address' => 'Dhanmondi, Dhaka',
+                'city' => 'Dhaka',
+                'address' => 'Baridhara, Dhaka',
+                'region' =>'Baridhara',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '3',
@@ -96,7 +110,9 @@ class RentSeeder extends Seeder
             ],
             [
                 'price'=>'BDT 45 Thousand',
+                'city' => 'Barisal',
                 'address' => 'Block A, Rayapur , Barisal',
+                'region' =>'Rayapur',
                 'category' => 'Apartment',
                 'bedroom'=> '3',
                 'bathroom'=> '3',
@@ -104,10 +120,99 @@ class RentSeeder extends Seeder
                 'area'=> '1800 sqft',
                 'phone'=>'01736656182',
                 'gallery' =>'https://images1.apartments.com/i2/mPQROu5vkg56yw4Obw8-63jHgSyEq141-MhPL9RH5QE/116/gild-chicago-il-building-photo.jpg?p=1'
-            ]
-    
-
-            
+            ],
+            [
+                'price'=>'BDT 25 Thousand',
+                'city' => 'Dhaka',
+                'address' => 'Motijheel Extension, Motijheel, Dhaka',
+                'region' =>'Motijheel',
+                'category' => 'Apartment',
+                'bedroom'=> '3',
+                'bathroom'=> '2',
+                'description'=>'This home situated in a great location which will give you easy access to everyday transportation. Many notable educational institutions are located in the area to provide and assure a good education for your children. All-time electricity, water and gas services are also available here. Also, you will be able to live in a pleasant locality.',
+                'area'=> '1615 sqft',
+                'phone'=>'01326656182',
+                'gallery' =>'https://images1.apartments.com/i2/FktDnGWyglS2FeQC7Y1r0i7Ae7jsLQrFdOOUvOstQMw/111/cityfront-place-chicago-il-primary-photo.jpg?p=1'
+            ],
+            [
+                'price'=>'BDT 18 Thousand',
+                'city' => 'Dhaka',
+                'address' => 'Bayazid, Chattogram',
+                'region' =>'Bayazid',
+                'category' => 'Apartment',
+                'bedroom'=> '3',
+                'bathroom'=> '3',
+                'description'=>'We are here to serve you if you are thinking of starting a residence in an easy-going area like Bayazid. Bayazid is offering a flat for rent to pick it for your next home. A good amount of school, college and groceries will be located right nearby to your home. It also features nice balcony, drawing, dining and a kitchen. All-time electricity backup with updated apartment fittings will make your life smooth. ',
+                'area'=> '1200 sqft',
+                'phone'=>'01326126182',
+                'gallery' =>'https://images1.apartments.com/i2/BfHDwjwH-lKLWlZJXyV9rw1ZaDHIZOgyp5E-pNURQbo/116/cityfront-place-chicago-il-building-photo.jpg?p=1'
+            ],
+            [
+                'price'=>'BDT 80 Thousand',
+                'city' => 'Chattogram',
+                'address' => 'Khulshi Hill R/A, North Khulshi, Khulshi, Chattogram',
+                'region' =>'Khulshi',
+                'category' => 'Apartment',
+                'bedroom'=> '3',
+                'bathroom'=> '4',
+                'description'=>'We are here to serve you if you are thinking of starting a residence in an easy-going area like Bayazid. Bayazid is offering a flat for rent to pick it for your next home. A good amount of school, college and groceries will be located right nearby to your home. It also features nice balcony, drawing, dining and a kitchen. All-time electricity backup with updated apartment fittings will make your life smooth. ',
+                'area'=> '3000 sqft',
+                'phone'=>'01626126242',
+                'gallery' =>'https://images1.apartments.com/i2/I8_DzYv9xMl30KFgbP0hyk7ZoveQ44AmXZYCavPEGxE/116/chestnut-tower-apartments-chicago-il-building-photo.jpg?p=1'
+            ],
+            [
+                'price'=>'BDT 20 Thousand',
+                'city' => 'Sylhet',
+                'address' => 'Kajal Shah, Sylhet',
+                'region' =>'Kajal Shah',
+                'category' => 'Apartment',
+                'bedroom'=> '3',
+                'bathroom'=> '3',
+                'description'=>'This is a great place to reside in, having an area with a good number of shopping places and schools. The apartment is cozy and all utility supplies readily accessible. Serene and fortified living has become a must when it comes to securing a permanent address in a busy city like Dhaka. So we suggest you see this flat by yourself. We hope it will make sure you are gratified with the home that has always been pictured in your mind. ',
+                'area'=> '1200 sqft',
+                'phone'=>'01626123343',
+                'gallery' =>'https://images1.apartments.com/i2/NSqnANcUMTqg23QmIfng7uvnZVgHTwcde5UCI40u-Ww/111/gateway-west-loop-chicago-il-primary-photo.jpg?p=1'
+            ],
+            [
+                'price'=>'BDT 21 Thousand',
+                'city' => 'Rajshahi',
+                'address' => 'Adabor, Rajshahi',
+                'region' =>'Adabor',
+                'category' => 'Apartment',
+                'bedroom'=> '3',
+                'bathroom'=> '3',
+                'description'=>'This is a great place to reside in, having an area with a good number of shopping places and schools. The apartment is cozy and all utility supplies readily accessible. Serene and fortified living has become a must when it comes to securing a permanent address in a busy city like Dhaka. So we suggest you see this flat by yourself. We hope it will make sure you are gratified with the home that has always been pictured in your mind. ',
+                'area'=> '1300 sqft',
+                'phone'=>'01316123343',
+                'gallery' =>'https://images1.apartments.com/i2/EEWiuo_nMVPV3XI468DRqFze_1Nvr1s7IGa87NS-NfM/111/coeval-chicago-il-primary-photo.jpg?p=1'
+            ],
+            [
+                'price'=>'BDT 25 Thousand',
+                'city' => 'Khulna',
+                'address' => 'Nabinpur, Khulna',
+                'region' =>'Nabinpur',
+                'category' => 'Apartment',
+                'bedroom'=> '3',
+                'bathroom'=> '3',
+                'description'=>'We are here to serve you if you are thinking of starting a residence in an easy-going area like Bayazid. Bayazid is offering a flat for rent to pick it for your next home. A good amount of school, college and groceries will be located right nearby to your home. It also features nice balcony, drawing, dining and a kitchen. All-time electricity backup with updated apartment fittings will make your life smooth.',
+                'area'=> '1400 sqft',
+                'phone'=>'01736123343',
+                'gallery' =>'https://images1.apartments.com/i2/ugkY_a-bYh3dRGcArit-PVrswFSdBQwbLf7E-pNaogs/111/amli-808-chicago-il-808interiorkitchen-3.jpg?p=1'
+            ],
+            [
+                'price'=>'BDT 30 Thousand',
+                'city' => 'Rangpur',
+                'address' => 'Chandgaon, Rangpur',
+                'region' =>'Shahbagh',
+                'category' => 'Apartment',
+                'bedroom'=> '4',
+                'bathroom'=> '3',
+                'description'=>'This wonderful flat covers an area of is situated in this notable building that you can see in our enlisted image. It can be a perfect home for your family which comes within your affordability. All the rooms are well spacious and lets you have the whole feel of solace and calmness with closed ones. This nice apartment is surely a reasonable deal for you comparing to the area the home is situated. The locality has a wide variety of schools, colleges, Universities, hospitals and shops.',
+                'area'=> '1800 sqft',
+                'phone'=>'01316123343',
+                'gallery' =>'https://images1.apartments.com/i2/YOazk66yM66xujbrgAJbR460YgXfcjk86b2urgO5adM/116/amli-808-chicago-il-808interiorkitchen-2.jpg?p=1'
+            ],
+               
         ]);
     }
 }

@@ -16,7 +16,9 @@ class CreateRentsTable extends Migration
         Schema::create('rents', function (Blueprint $table) {
             $table->id();
             $table->string("price");
+            $table->string("city");
             $table->string("address");
+            $table->string("region");
             $table->string("category");
             $table->string("bedroom");
             $table->string("bathroom");
