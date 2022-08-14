@@ -18,7 +18,8 @@
         </div>
         <div class="card-body" style="padding: 50px">
           <h4 class="card-title font-weight-bold"><a>{{  $rent['category']}}</a></h4>
-          <h4 class="about">{{ $rent['price'] }}</h4>
+          <h4 class="about fw-bold">{{ $rent['price'] }}</h4>
+          
           <h5 class="about">{{ $rent['address'] }}</h5>
           
 
@@ -27,6 +28,15 @@
           </p>
           <hr class="my-4" />
           <p class="lead"><strong>Property Information</strong></p>
+
+          
+          @if($rent['status']=='Booked')
+          <p class="lead about text-danger fw-bold">Status : {{ $rent['status'] }}</p>
+          @else
+          <p class="lead about text-success fw-bold">Status : {{ $rent['status'] }}</p>
+          @endif
+
+
           <ul class="list-unstyled list-inline d-flex justify-content-start" >
             <li class="list-inline-item ">
               <div class="chip me-0"><i class="fa fa-solid fa-bed"></i> Bedrooms: {{ $rent['bedroom'] }} | </div>
@@ -40,9 +50,14 @@
            
           </ul>
           <p>Type   :    Appartment</p>
-          <p>Purpose   :    Rent</p>
+          
           <p>For more info: <i class="fa fa-phone "></i> {{ $rent['phone'] }} </p>
+
+          @if($rent['status'] != "Booked")
           <a href="/booking/{{ $rent['id'] }}"><button style="width: 150px;margin-top:20px" type="button" class="btn btn-lg btn-primary">Book</button></a>
+
+          @endif
+
         </div>
       </div>
       

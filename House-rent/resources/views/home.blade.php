@@ -24,14 +24,24 @@
 
 <section id="apps">
 <div class="container custom-rent mb-5">
+  
+  @if(Session::has('success'))
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Congratulations!</strong> Your booking has been confirmed.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          @endif
+
   <h1 class="mb-5 text-center featurette-heading"  style="font-size:50px;margin-top:40px" >Explore Rentals in Bangladesh</h1>  
-    <div class="rentals " style="display: flex;flex-flow:row;justify-content:space-around;flex-wrap:wrap"> 
+    <div class="rentals " style="display:flex;flex-flow:row;justify-content:start ;flex-wrap:wrap"> 
        
 
       @foreach ($rents as $item) 
       
 
-     <div class="card shadow p-3 card text-center cityimg border-0" style="width: 20rem;display:inline-block;margin:40px 0px">
+     <div class="card shadow p-3 card text-center cityimg border-0 me-1" style="width: 20rem;display:inline-block;margin:40px 0px">
       <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top " src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
       <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
         <div class="card-body">

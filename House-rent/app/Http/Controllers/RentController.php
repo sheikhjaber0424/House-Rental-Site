@@ -50,6 +50,9 @@ class RentController extends Controller
         {
             
             $detail = Rent::find($id);
+            $detail->status = 'Booked';
+            $detail->save();
+            //dd( $detail);
             return view('booking',['rent'=>$detail]);
         }
         else

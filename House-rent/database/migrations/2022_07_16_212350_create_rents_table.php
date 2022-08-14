@@ -26,6 +26,7 @@ class CreateRentsTable extends Migration
             $table->string("area");
             $table->string("phone");
             $table->string("gallery");
+            $table->string("status");
             $table->timestamps();
         });
     }

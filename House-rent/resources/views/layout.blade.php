@@ -36,11 +36,7 @@
   padding: 0;
  }
 
- body{
-  @media screen and (max-width:480px){
-    height:2000px;
-  }
- }
+
 
  .custom-login{
   height: 620px;

@@ -1,5 +1,5 @@
 @php
-    $city =array("dhaka","rajshahi","khulna","barisal","sylhet","mymensinhg","rangpur","chittagong");
+    $city =array("dhaka","rajshahi","khulna","barisal","sylhet","mymensingh","rangpur","chittagong");
   
 @endphp
 
