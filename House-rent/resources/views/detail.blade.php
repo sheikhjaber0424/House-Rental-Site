@@ -11,14 +11,22 @@
         
       <div class="card shadow " style="width: 90%">
         <div class="bg-image hover-overlay ripple mb-5 mt-5 " data-mdb-ripple-color="light" style="display: flex;justify-content:center">
-          <img src="{{ $rent['gallery'] }}" width="90%" class="text-center" />
+          <img src="{{ asset('storage/'.$rent['gallery']) }}" width="90%" class="text-center" />
           <a href="#!">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
           </a>
         </div>
         <div class="card-body" style="padding: 50px">
+         
+
           <h4 class="card-title font-weight-bold"><a>{{  $rent['category']}}</a></h4>
+        
           <h4 class="about fw-bold">{{ $rent['price'] }}</h4>
+          @if($rent['status']=='Booked')
+          <p class="lead about text-danger fw-bold">Status : {{ $rent['status'] }}</p>
+          @else
+          <p class="lead about text-success fw-bold">Status : {{ $rent['status'] }}</p>
+          @endif
           
           <h5 class="about">{{ $rent['address'] }}</h5>
           
@@ -30,11 +38,7 @@
           <p class="lead"><strong>Property Information</strong></p>
 
           
-          @if($rent['status']=='Booked')
-          <p class="lead about text-danger fw-bold">Status : {{ $rent['status'] }}</p>
-          @else
-          <p class="lead about text-success fw-bold">Status : {{ $rent['status'] }}</p>
-          @endif
+       
 
 
           <ul class="list-unstyled list-inline d-flex justify-content-start" >
@@ -75,7 +79,7 @@
 
           @if($rent['id'] != $item['id'] )
           <div class="card shadow p-3 card text-center cityimg border-0" style="width: 20rem;display:inline-block;margin:40px 0px">
-            <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top " src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
+            <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top " src="{{ asset('storage/'.$item['gallery'])}}" alt="Card image cap" height="250">    </a>
             <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
               <div class="card-body">
                   <h5>{{ $item['category'] }}</h5>

@@ -67,3 +67,8 @@ Route::get('/citySearch/{city_name}',[RentController::class,'citySearch']);
 
 //Explore regions
 Route::get('/exploreRegion/{explore_name}',[RentController::class,'exploreRegion']);
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

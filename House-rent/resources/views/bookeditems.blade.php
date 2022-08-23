@@ -4,7 +4,7 @@
 
 
     <section style="min-height: 525px !important">
-        <div class="container-lg">+
+        <div class="container-lg">
 
           
             <div class="text-center my-5"><h1 class="display-5">Your Bookings</h1> </div>

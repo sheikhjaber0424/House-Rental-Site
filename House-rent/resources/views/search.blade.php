@@ -9,7 +9,7 @@
         
   
        <div class="card shadow p-3 text-center cityimg border-0" style="width: 20rem;display:inline-block;margin:40px 2px">
-        <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top" src="{{ $item['gallery'] }}" alt="Card image cap" height="250">    </a>
+        <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none"> <img class="card-img-top" src="{{ asset('storage/'.$item['gallery']) }}" alt="Card image cap" height="250">    </a>
         <a href="/detail/{{$item['id']}}" style="color: black;text-decoration:none">
           <div class="card-body">
               <h5>{{ $item['category'] }}</h5>
