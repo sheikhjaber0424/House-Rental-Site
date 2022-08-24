@@ -54,12 +54,12 @@
 
         @endforeach  
       </div>
-      <div class="mt-6 p-4 d-flex justify-content-end">
-        <div class="secondary">
+      
+       <div class="d-flex justify-content-center my-4">
           {{  $rents->links()}}
         </div>
        
-      </div>
+  
     
     </div>
    
@@ -130,8 +130,8 @@
   </div>
 </section>
 
-<section id="explore" class="mb-5">
-  <div class="container-lg">
+<section id="explore" style="margin-bottom: 100px" >
+  <div class="container-lg" >
     <div class="text-center">
       <h2 class="display-4 my-5">Explore Areas</h2>
     </div>

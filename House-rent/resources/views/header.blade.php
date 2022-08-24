@@ -30,8 +30,8 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nn">
        
         <form action="/search" class="d-flex">
-          <input style="width:300px" class="form-control me-2" type="text" name="query" placeholder="Search" aria-label="Search">
-          <button style="width:100px" class="btn btn-outline-light rounded-pill" type="submit">Search</button>
+          <input style="width:300px " class="form-control me-2" type="text" name="query" placeholder="Search" aria-label="Search">
+          <button style="width:100px" class="btn btn-outline-light rounded-pill me-2" type="submit">Search</button>
         </form> 
        
         
@@ -57,9 +57,9 @@
              
             
         <li>
-          <a href="/login"><button type="button" class="btn btn-success mx-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#Login">Log
+          <a href="/login"><button type="button" style="width: 100px" class="btn btn-success mx-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#Login">Log
             In</button></a>
-          <a href="/register"><button type="button" class="btn btn-success rounded-pill " data-bs-toggle="modal" data-bs-target="#Signup">Register</button></a>
+          <a href="/register"><button type="button" style="width: 100px" class="btn btn-success rounded-pill " data-bs-toggle="modal" data-bs-target="#Signup">Register</button></a>
         </li>    
     
         

@@ -117,7 +117,7 @@ class RentSeeder extends Seeder
                 'status' =>'Up for rent'
             ],
             [
-                'price'=>'BDT 45 Thousand',
+                'price'=>'BDT 18 Thousand',
                 'city' => 'Barisal',
                 'address' => 'Block A, Rayapur , Barisal',
                 'region' =>'Rayapur',
@@ -125,7 +125,7 @@ class RentSeeder extends Seeder
                 'bedroom'=> '3',
                 'bathroom'=> '3',
                 'description'=>'This is a beautiful apartment and in the living space, you will find that there is a multi-colored brick pattern and the floor pattern is strikingly unique. There are three bedrooms and two of them have balconies attached. There is a drawing and a dining room and even though it is one space, it is quite an extensive one and you will find a comfortable amount of space. One of the bedrooms here does not have an attached balcony but it is quite spacious. You could use this as the guest room',
-                'area'=> '1800 sqft',
+                'area'=> '1200 sqft',
                 'phone'=>'01736656182',
                 'gallery' =>'https://images1.apartments.com/i2/mPQROu5vkg56yw4Obw8-63jHgSyEq141-MhPL9RH5QE/116/gild-chicago-il-building-photo.jpg?p=1',
                 'status' =>'Up for rent'
@@ -154,7 +154,7 @@ class RentSeeder extends Seeder
                 'bedroom'=> '3',
                 'bathroom'=> '4',
                 'description'=>'We are here to serve you if you are thinking of starting a residence in an easy-going area like Bayazid. Bayazid is offering a flat for rent to pick it for your next home. A good amount of school, college and groceries will be located right nearby to your home. It also features nice balcony, drawing, dining and a kitchen. All-time electricity backup with updated apartment fittings will make your life smooth. ',
-                'area'=> '3000 sqft',
+                'area'=> '2400 sqft',
                 'phone'=>'01626126242',
                 'gallery' =>'https://images1.apartments.com/i2/I8_DzYv9xMl30KFgbP0hyk7ZoveQ44AmXZYCavPEGxE/116/chestnut-tower-apartments-chicago-il-building-photo.jpg?p=1',
                 'status' =>'Up for rent'
@@ -168,7 +168,7 @@ class RentSeeder extends Seeder
                 'bedroom'=> '3',
                 'bathroom'=> '3',
                 'description'=>'This is a great place to reside in, having an area with a good number of shopping places and schools. The apartment is cozy and all utility supplies readily accessible. Serene and fortified living has become a must when it comes to securing a permanent address in a busy city like Dhaka. So we suggest you see this flat by yourself. We hope it will make sure you are gratified with the home that has always been pictured in your mind. ',
-                'area'=> '1200 sqft',
+                'area'=> '1400 sqft',
                 'phone'=>'01626123343',
                 'gallery' =>'https://images1.apartments.com/i2/NSqnANcUMTqg23QmIfng7uvnZVgHTwcde5UCI40u-Ww/111/gateway-west-loop-chicago-il-primary-photo.jpg?p=1',
                 'status' =>'Up for rent'

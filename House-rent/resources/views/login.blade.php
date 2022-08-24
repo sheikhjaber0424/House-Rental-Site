@@ -16,7 +16,7 @@
                   <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                 </div>
               
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" style="width: 90px" class="btn btn-primary rounded-pill">Login</button>
               </form>
         </div>
 
